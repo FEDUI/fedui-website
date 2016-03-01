@@ -1,0 +1,73 @@
+/* Head Images */
+$width: -5em;
+
+.slide-left {
+	transition: $head-transition;
+	left: $width !important;
+}
+
+.slide-right {
+	transition: $head-transition;
+	right: $width !important;
+}
+
+/* Hamburger */
+// Needed for the js collapse of the menu
+.collaped-menu {
+	transition: 0.3s;
+	height: 0em;
+	overflow: hidden;
+}
+.uncollaped-menu {
+	transition: 0.3s;
+	height: 200px;
+	overflow: hidden;
+}
+
+.cross {
+	transition: 0.3s;
+
+	#hamburger {
+		#rectangle-2 {
+			transition: 0.3s;
+			opacity: 0;
+		}
+		#rectangle-1 {
+			transition: 0.3s;
+			transform: translateY(12px) rotate(45deg);
+			transform-origin: 50% 50%;
+		}
+		#rectangle-3 {
+			transition: 0.3s;
+			transform: translateY(-12px) rotate(-45deg);
+			transform-origin: 50% 50%;
+		}
+	}
+}
+.uncross {
+
+	#hamburger {
+		overflow: visible;
+
+		#rectangle-2 {
+			transition: 0.3s;
+			opacity: 1;
+		}
+		#rectangle-1 {
+			transition: 0.3s;
+			transform: translateY(0px) rotate(0deg);
+			transform-origin: 50% 50%;
+		}
+		#rectangle-3 {
+			transition: 0.3s;
+			transform: translateY(0px) rotate(0deg);
+			transform-origin: 50% 50%;
+		}
+	}
+}
+
+
+
+
+
+

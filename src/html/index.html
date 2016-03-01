@@ -1,0 +1,93 @@
+@@include('./src/html/includes/_base/head.html')
+@@include('./src/html/includes/_base/nav.html')
+
+<main class="home"> 
+	
+	<section id="welcome">
+		<img src="../img/erik.png" alt="Picture of Martijn" class="us" id="erik">
+		<h1><a href="">FedUi</a></h1>
+		<img src="../img/martijn.png" alt="Picture of Martijn" class="us" id="martijn">
+	</section>
+
+	<section id="about">
+		<header class="left">
+			<h1>Over FedUi</h1>
+			@@include('./src/html/includes/components/line.html')
+		</header>
+
+		<article class="small-text">
+			<h2>Erik</h2>
+			<p>
+				Ik zal mijzelf even voorstellen. Ik ben Erik en houd mij vooral bezig met de ontwerp kant van FedUi. Ik leg de focus bij FedUi op interaction design en vormgeving. Ik vind het belangrijk dat de gebruiker centraal staat bij een ontwerp. Hierdoor wil ik de ontwerpen zo maken dat deze op alle devices gebruikt kunnen worden. Ook is het van groot belang dat de gebruiker bij de eerste kennismaking van de website begrijpt hoe de website in elkaar zit en hoe hij of zij door de site kan navigeren.
+			</p>
+		</article>
+
+		<article class="small-text">
+			<h2>Martijn</h2>
+			<p>
+				Hoi, Ik ben varantwoordelijk voor het technische gedeelte van FedUi. Naast techniek heb ik ook een passie voor Design. Ik hou vooral van een clean & ruimtevol ontwerp wat gebruik maakt van pastel kleuren. Ik vind het belangrijk dat je aan het design kan zien wat voor soort persoon je bent.
+			</p>
+			<p>
+				Op technisch gebied Nerd ik graag over de nieuwste technieken, maar vind het ook erg belangrijk dat een website wordt gebouwd met het oog op een goed structuur.
+			</p>
+		</article>
+
+		<article class="large-text">
+			<h2>FedUi</h2>
+			<p>
+				FedUi staat voor Front-end development & User interface. 
+			</p>
+			<p>
+				Bij FedUi vinden wij het belangrijk dat een website benaderd wordt vanuit verschillende perspectieven. Aangezien wij allebei onze eigen expertise hebben kunnen wij dit dan ook naar voren brengen in de projecten. We betrekken graag de klant bij het ontwerp proces, zodat hij/zij zichzelf kan profileren online. Naast het ontwerpen van een website, geven wij ook advies hoe je website online gevonden wordt op het internet.
+			</p>
+		</article>
+
+	</section>
+
+	@@include('./src/html/includes/components/video.html')
+
+	@@include('./src/html/includes/components/services.html')
+
+	<section id="latest">
+		<header class="left">
+			<h1>Laatste Projecten</h1>
+			@@include('./src/html/includes/components/line.html')
+		</header>
+
+		<section class="portfolio-part">
+			<figure>
+				<img src="./img/projects/nike.png" alt="project img">
+			</figure>
+
+			<div class="meta">
+				<h2>Isabelle Amé</h2>
+				<span class="date">01-03-2016</span>
+				<p>
+					Isabelle is een Nederlands Sing & Song writer uit Tilburg.
+				</p>
+			</div>
+
+			<a href="">Zie meer</a>
+		</section>
+
+		<section class="portfolio-part">
+			<figure>
+				<img src="./img/projects/nike.png" alt="project img">
+			</figure>
+
+			<div class="meta">
+				<h2>Project Two</h2>
+				<span class="date">01-03-2016</span>
+				<p>
+					Een heel kort intro over het project
+				</p>
+			</div>
+
+			<a href="">Zie meer</a>
+		</section>
+		
+	</section>
+
+</main>
+	
+@@include('./src/html/includes/_base/footer.html')

@@ -1,0 +1,55 @@
+.main-nav {
+
+	button {
+		position: fixed;
+		z-index: 999;
+		right: 2em;
+		top: 1em;
+		@include flex(column, center);
+
+		&:hover {
+			cursor: pointer;
+
+			#hamburger {
+				fill: $prime-color-lighter;
+			}
+			span {
+				color: $prime-color-lighter;
+			}
+		}
+
+		span {
+			margin-top: -.5em;
+			color: $prime-color;
+		}
+	}
+
+	nav {
+		position: fixed;
+		z-index: 999;
+		right: 2em;
+		top: 5em;
+
+		ul {
+
+		}
+		li {
+			margin: $gutter-large 0;
+			text-align: right;
+		}
+		a {
+			background-color: $prime-color;
+			padding: $gutter;
+
+			&:hover {
+				background-color: $prime-color-lighter;
+			}
+		}
+	}
+}
+
+#hamburger {
+	stroke-width: 1;
+	fill: $prime-color;
+	fill-rule: evenodd;
+} 

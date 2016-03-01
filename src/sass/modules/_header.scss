@@ -1,0 +1,41 @@
+#welcome {
+	height: 85vh;
+
+	@include flex(row, space-between);
+
+	img {
+		height: 85vh;
+		position: fixed;
+
+		&:nth-of-type(1) {
+			margin-left: -1em;
+			transition: $head-transition;
+			left: -17em;
+		}
+		&:nth-of-type(2) {
+			margin-right: -1em;
+			transition: $head-transition;
+			right: -17em;
+		}
+	}
+	h1 {
+		align-self: center;
+		padding: 0;
+		margin: 0;
+
+		a {
+			font-size: $xxlarge-font-size;
+			line-height: $xxlarge-line-height;
+			font-family: "Open Sans";
+			padding: 0 1em;
+			border: 3px solid $el-color;
+			transition: .3s;
+			background-color: transparent;
+
+			&:hover {
+				transition: .3s;
+				background-color: $el-color;
+			}
+		}
+	}
+}

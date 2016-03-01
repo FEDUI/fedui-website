@@ -1,0 +1,32 @@
+#services {
+	@include col(6);
+	@include flex(column, center);
+	padding-bottom: 5em;
+
+	h1 {
+		margin-left: auto;
+	}
+
+	ul {
+		@include flex(row, center);
+		flex-wrap: wrap;
+		padding: 0;
+		margin: 0;
+
+		li {
+			padding: 0;
+			margin: $gutter $gutter-large;
+			display: inline-block;
+		}
+
+		a {
+			padding: $gutter;
+			background-color: $secondary-color;
+			color: $white;
+
+			&:hover {
+				background-color: $secondary-color-lighter;
+			}
+		}
+	}
+}

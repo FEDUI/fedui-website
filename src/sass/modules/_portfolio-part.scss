@@ -1,0 +1,73 @@
+.portfolio-part {
+	display: inline-block;
+	background-color: $prime-color;
+	@include flex(row, center);
+	flex-wrap: wrap;
+	max-width: 90%;
+	padding: 0;
+	margin: 3em 0;
+	
+	figure {
+		padding: 0;
+		margin: 0;
+		margin-top: -2em;
+	}
+	img {
+		
+	}
+
+	.meta {
+		@include flex(column, flex-start);
+		flex-wrap: wrap;
+		padding: 0 .3em;
+
+		h2, p {
+			margin: 0;
+		}
+		span {
+			font-size: 90%;
+		}
+	}
+	h2, span, p, a {
+		color: $white;	
+	}
+
+	a {
+		background-color: $secondary-color;
+		color: $white;
+		padding: $gutter-small $gutter-xlarge;
+		margin-bottom: -1em;
+		margin-left: auto;
+		margin-right: 1em;
+		align-self: flex-end;
+		border: 2px solid transparent;
+	
+		&:hover,
+		&:focus {
+			border: 2px solid $prime-color;
+		}
+	}
+}
+
+@media(min-width: 600px) {
+	.portfolio-part {
+		@include col(3);
+		padding: 0;
+
+		figure {
+			margin-right: 1em;
+			margin-left: 2em;
+		}
+		.meta {
+			margin-right: auto;
+			width: 45%;
+		}
+	}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+footer {
+	background-color: $gray-bg;
+	@include flex(column, center);
+
+	p {
+		margin-left: -#{$grid-col};
+	}
+	> a {
+		margin: 2em 0;
+		padding: .3em 3em;
+		background-color: $secondary-color;
+		color: $white;
+
+		&:hover {
+			background-color: $secondary-color-lighter;
+		}
+	}
+
+	ul {
+		margin-bottom: 3em;
+	}
+	li {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+
+		a {
+			margin: 0 1em;
+
+			&:hover {
+				svg {
+					g {
+						fill: $secondary-color-lighter;
+					}
+				}
+			}
+		}
+	}
+
+	svg {
+		g {
+			fill: $secondary-color;
+		}
+	}
+}

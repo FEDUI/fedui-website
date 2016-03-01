@@ -1,0 +1,8 @@
+.small-text {
+	@include col(3);
+	padding: 0 1em;	
+}
+.large-text {
+	@include col(4);
+	padding: 0 1em;	
+}
