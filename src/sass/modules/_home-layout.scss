@@ -8,6 +8,10 @@ main {
 		width: 100%;
 	}
 
+	h1 {
+		/*color: darken($prime-color, 20%);*/
+	}
+
 	#welcome {
 		width: 100%;
 		background-color: $white;
@@ -43,30 +47,6 @@ main {
 			}
 			&:nth-of-type(2) {
 				margin-left: auto;
-			}
-		}
-	}
-
-	#latest {
-		width: 100%;
-		@include flex(row, space-around);
-		flex-wrap: wrap;
-		background-color: $white;
-
-		header {
-			width: 100%;
-			display: block;
-			@include flex(row, space-between);
-
-			h1 {
-				padding-left: $gutter-large;
-				display: inline-block;
-				align-self: center;
-			}
-			svg {
-				display: inline-block;
-				align-self: center;
-				margin-right: 3rem;
 			}
 		}
 	}
@@ -107,13 +87,4 @@ header.left {
 		align-self: center;
 		margin-right: 3rem;
 	}
-}
-
-#video {
-	max-height: 15em;
-	overflow: hidden;
-	width: 100vw;
-}
-video {
-	width: 100%;	
 }

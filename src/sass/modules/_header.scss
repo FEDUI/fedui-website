@@ -1,6 +1,5 @@
 #welcome {
 	height: 85vh;
-
 	@include flex(row, space-between);
 
 	img {

@@ -1,0 +1,44 @@
+.projects-overview {
+	width: 100%;
+	@include flex(row, space-around);
+	flex-wrap: wrap;
+	background-color: $white;
+
+	header {
+		width: 100%;
+		display: block;
+		@include flex(row, space-between);
+
+		h1 {
+			padding-left: $gutter-large;
+			display: inline-block;
+			align-self: center;
+		}
+		svg {
+			display: inline-block;
+			align-self: center;
+			margin-right: 3rem;
+		}
+	}
+}
+
+#latest {
+	.projects-link {
+		@include col(6);
+		@include flex(row, space-around);
+		margin: 1.5em 0;
+
+		a {
+			background-color: $secondary-color;
+			color: $white;
+			padding: $gutter-small $gutter-xlarge;
+			border: 2px solid transparent;
+			align-self: flex-end;
+		
+			&:hover,
+			&:focus {
+				border: 2px solid $prime-color;
+			}
+		}
+	}
+}

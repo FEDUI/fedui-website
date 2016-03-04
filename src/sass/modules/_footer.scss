@@ -2,22 +2,29 @@ footer {
 	background-color: $gray-bg;
 	@include flex(column, center);
 
-	p {
-		margin-left: -#{$grid-col};
+	h1 {
+		padding-left: $gutter-large;
+		display: inline-block;
+		align-self: center;
 	}
-	> a {
-		margin: 2em 0;
-		padding: .3em 3em;
-		background-color: $secondary-color;
-		color: $white;
 
-		&:hover {
-			background-color: $secondary-color-lighter;
+	p {
+
+		a {
+			margin: 2em 0;
+			color: $prime-color;
+			font-weight: bold;
+			text-decoration: underline;
+
+			&:hover {
+				color: $prime-color-lighter;
+			}
 		}
 	}
 
 	ul {
-		margin-bottom: 3em;
+		margin-bottom: 4em;
+		margin-top: 1em;
 	}
 	li {
 		display: inline-block;
@@ -30,7 +37,7 @@ footer {
 			&:hover {
 				svg {
 					g {
-						fill: $secondary-color-lighter;
+						fill: $prime-color;
 					}
 				}
 			}
@@ -38,8 +45,24 @@ footer {
 	}
 
 	svg {
+		scale: .8;
 		g {
-			fill: $secondary-color;
+			fill: darken($prime-color, 20%);
 		}
 	}
+
+	@media(min-width: 1000px) {
+		p {
+			margin-left: -#{$grid-col};
+		}
+	}
+}
+
+@keyframes highlight {
+	70% {
+		background-color: rgba(200, 200, 200, 1);
+	}
+}
+#contact:target {
+	animation: highlight .7s;
 }

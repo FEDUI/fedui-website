@@ -38,7 +38,7 @@ var config = {
     
     misc: {
         src: [
-            'fonts/**',
+            'src/fonts/**',
             '*.ico',
             'src/.*'
         ],

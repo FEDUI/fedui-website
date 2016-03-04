@@ -83,18 +83,17 @@ blockquote {
 
 }
 
-
+@font-face {
+	font-family: 'Menlo Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Menlo Regular'), url('../Menlo-Regular.woff') format('woff');
+}
 
 // Project Font Style
-$primary-font: "Open Sans", "Helvetica", Sans-Serif;
-$secondary-font: "Georgia", "Times", "Times New Roman", Serif;
+$primary-font: "Open Sans", "Helvetica", "avenir", Sans-Serif;
+$secondary-font: "Menlo Regular", "Georgia", Serif;
 $accent-font: "Garamond", Serif;
-
-/*font-family: 'Oswald', sans-serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Roboto Slab', serif;
-font-family: 'Arimo', sans-serif;
-font-family: 'Arvo', serif;*/
 
 * {
 	font-family: $primary-font;
