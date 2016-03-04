@@ -31,14 +31,14 @@ var faces = {
 		document.onscroll = function() {
 			var header = document.querySelector('#welcome');
 			var headerHeight = header.offsetHeight;
-			var scroll = header.scrollTop;
+			var scroll = window.pageYOffset;
 
-			if ( scroll > 50 ) {
-				
+			if ( scroll > (headerHeight / 4) ) {
+
 				faces.fadeIn();
 
 			}
-			if ( scroll < 50 ) {
+			if ( scroll < (headerHeight / 4) ) {
 
 				faces.fadeOut();			
 
