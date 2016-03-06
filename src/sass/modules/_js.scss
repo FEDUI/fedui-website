@@ -1,16 +1,3 @@
-/* Head Images */
-$width: -5em;
-
-.slide-left {
-	transition: $head-transition;
-	left: $width !important;
-}
-
-.slide-right {
-	transition: $head-transition;
-	right: $width !important;
-}
-
 /* Hamburger */
 // Needed for the js collapse of the menu
 .collaped-menu {
