@@ -22,7 +22,6 @@ gulp.task('clean', function() {
 
 	return gulp.src(config.base, {read: false})
 	.pipe(clean())
-
 });
 
 // Compress all images
