@@ -22,6 +22,13 @@ var config = {
         destFile: 'styles.min.css'
     },
 
+    critical: {
+        watch: ['src/sass/**/*.scss'],
+        src: ['./src/sass/critical.scss'],
+        folder: 'css/',
+        destFile: 'critical.min.css'
+    },
+
     js: {
         watch: ['src/js/**/*.js'],
         src: ['./src/js/main.js'],

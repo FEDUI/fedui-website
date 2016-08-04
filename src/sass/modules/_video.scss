@@ -1,0 +1,17 @@
+#about-video {
+	display: block;
+    max-height: 7em;
+
+    @media( min-width: 500px ) {
+    	max-height: 9em;
+    }
+
+    @media( min-width: 800px ) {
+    	max-height: 15em;
+    }
+
+    video {
+    	display: block;
+    	transform: translateY(-20%);
+    }
+}

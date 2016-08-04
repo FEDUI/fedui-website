@@ -1,6 +1,6 @@
 footer {
 	background-color: $gray-bg;
-	@include flex(column, center);
+	/*@include flex(column, center);*/
 
 	h1 {
 		padding-left: $gutter-large;
@@ -23,8 +23,9 @@ footer {
 	}
 
 	ul {
-		margin-bottom: 4em;
-		margin-top: 1em;
+		padding-bottom: 4em;
+		padding-top: 1em;
+		text-align: center;
 	}
 	li {
 		display: inline-block;
@@ -53,7 +54,7 @@ footer {
 
 	@media(min-width: 1000px) {
 		p {
-			margin-left: -#{$grid-col};
+			/*margin-left: -#{$grid-col};*/
 		}
 	}
 }

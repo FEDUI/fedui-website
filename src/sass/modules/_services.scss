@@ -15,20 +15,19 @@
 
 		li {
 			padding: 0;
-			margin: 0.6em $gutter-large;
+			margin: 0.9em 0.75em;
 			display: inline-block;
 		}
 
 		a {
-			padding: $gutter;
+			padding: 0.3rem 1em;
 			background-color: $secondary-color-lighter;
 			color: $white;
 			border: 2px solid transparent;
 			
 			&:hover,
 			&:focus {
-				border: 2px solid $prime-color;
-				/*background-color: $secondary-color-lighter;*/
+				background-color: $secondary-color;
 			}
 		}
 	}

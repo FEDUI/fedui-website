@@ -6,3 +6,7 @@ main {
 	margin: 0 auto;
 	overflow: hidden;
 }
+.container {
+	@include col(6);
+	margin: 0 auto;
+}

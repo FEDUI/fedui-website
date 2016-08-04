@@ -49,22 +49,26 @@ var faces = {
 	},
 	onLoad: function() {
 
-		var face = faces.init();
-		var erik = face[0];
-		var martijn = face[1];
+		if ( document.querySelectorAll('.us').length ) {
 
-		window.onload = function() {
+			var face = faces.init();
+			var erik = face[0];
+			var martijn = face[1];
 
-			setTimeout( function(){
+			window.onload = function() {
 
-				erik.classList.add('slide-left');
-				martijn.classList.add('slide-right');
+				setTimeout( function(){
 
-			}, 300);
+					erik.classList.add('slide-left');
+					martijn.classList.add('slide-right');
 
-		};
+				}, 300);
 
-		faces.onScroll();
+			};
+
+			faces.onScroll();
+
+		}
 
 	}
 };

@@ -2,13 +2,10 @@ button {
 	border: none;
 	background-color: transparent;
 
-	&:hover {
-		
-	}
-	&:active {
+	&:hover, &:focus {
 		outline: none;
 	}
-	&:focus {
+	&:active {
 		outline: none;
 	}
 }

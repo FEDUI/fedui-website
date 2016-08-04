@@ -1,0 +1,36 @@
+@font-face {
+	font-family: 'Menlo Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Menlo Regular'), url('../Menlo-Regular.woff') format('woff');
+}
+
+$primary-font: "Open Sans", "Helvetica", "avenir", Sans-Serif;
+$secondary-font: "Menlo Regular", "Georgia", Serif;
+$accent-font: "Garamond", Serif;
+
+body {
+	font-family: $primary-font;
+	line-height: 1.7;
+	color: $font-color;
+}
+
+h1 {
+	@include xxlarge;
+	font-weight: 300;
+}
+h2 {
+	@include large;
+	font-weight: 300;
+}
+h3 {
+	@include large;
+	font-weight: bold;
+}
+h4, p, a, button {
+	@include medium;
+}
+
+h2, h3, h4, {
+	font-family: $secondary-font;
+}

@@ -6,17 +6,17 @@
 @import 'base/grid';
 @import 'base/colors';
 @import 'base/layout';
-@import 'base/typography';
+@import 'base/typography-calculation';
+@import 'base/typography-declaration';
 @import 'base/animations';
 
 // Components
 @import 'components/buttons';
 @import 'components/list';
 @import 'components/blockquote';
+@import 'components/links';
 
 // Modules
-@import 'modules/home-layout';
-@import 'modules/main-nav';
 @import 'modules/portfolio-part';
 @import 'modules/blog-part';
 @import 'modules/text';
@@ -24,8 +24,13 @@
 @import 'modules/blog-overview';
 @import 'modules/services';
 @import 'modules/footer';
-@import 'modules/header';
 @import 'modules/js';
 @import 'modules/about-video';
 @import 'modules/color-squares';
 @import 'modules/line';
+@import 'modules/line-before';
+@import 'modules/line-after';
+@import 'modules/video';
+@import 'modules/header';
+@import 'modules/home-layout';
+@import 'modules/main-nav';

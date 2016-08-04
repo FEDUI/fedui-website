@@ -1,0 +1,26 @@
+@media( min-width: 775px ) {
+	.blue-line-before::before {
+		margin-right: 0.5em;
+		width: 4em;
+	}
+}
+@media( min-width: 850px ) {
+	.blue-line-before::before {
+		width: 7em;
+	}
+}
+@media( min-width: 1000px ) {
+	.blue-line-before::before {
+		width: 9em;
+	}
+}
+@media( min-width: 1100px ) {
+	.blue-line-before::before {
+		width: 11em;
+	}
+}
+@media( min-width: 1280px ) {
+	.blue-line-before::before {
+		width: 12em;
+	}
+}
